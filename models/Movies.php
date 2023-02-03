@@ -17,6 +17,7 @@ class Movies{
         $this->type= $_type;
         $this->duration= $_duration;
         $this->plot= $_plot;
+        $this->cast= $_cast;
         
     }
  
