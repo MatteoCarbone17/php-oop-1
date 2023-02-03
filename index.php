@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__ . '/models/Movies.php';
 require_once __DIR__ . '/models/Cast.php';
-
-
+require_once __DIR__ . '/models/Movie.php';
+$movieTheMist = new Movie('The Mist','horror' ,'120 minuti','roba strana dall\'inferno, finale trumatico', new Cast ('Thomas Jane', 'Laurie Holden', 'devil') );
+$movieTitanic = new Movie('Titanic','romatico' ,'dura troppo','Una nave inaffondabile che poi affonda',new Cast ('Leonardo DiCaprio ', 'Kate Winslet', 'iceberg') );
 ?>
 
 <!DOCTYPE html>
@@ -18,12 +18,8 @@ require_once __DIR__ . '/models/Cast.php';
         <h1>
             OOP PHP MOVIES
         </h1>
-
         <pre>
-            <?php
-            $movieTheMist = new Movies('The Mist','horror' ,'120 minuti','roba strana dall\'inferno, finale trumatico', new Cast ('Thomas Jane', 'Laurie Holden', 'devil') );
-            $movieTitanic = new Movies('Titanic','romatico' ,'dura troppo','Una nave inaffondabile che poi affonda',new Cast ('Leonardo DiCaprio ', 'Kate Winslet', 'iceberg') );
-            
+            <?php        
             var_dump($movieTheMist,$movieTitanic);
             ?>
         </pre>

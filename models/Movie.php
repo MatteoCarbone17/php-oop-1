@@ -1,8 +1,7 @@
 <?php 
 
 
-class Movies{
-   
+class Movie{
     public $title; // campi(caratteristiche/attributi(variabili)  tipiche)
     public $type;
     public $duration;
